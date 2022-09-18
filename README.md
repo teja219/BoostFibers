@@ -3,7 +3,7 @@ Fibers are similar to threads, assuming a single core machine, fibers are to thr
 
 All fibers share a single thread
 
-A fiber can handover cpu time to another process whenver it does an IO or thinks it did too much work, below are two ways using which a fiber can pause(suspend/yield)
+A fiber can handover cpu time to another fiber whenver it does an IO or thinks it did too much work, below are two ways using which a fiber can pause(suspend/yield)
 
 1. Suspend a fiber whenever you want it to sleep or when it makes a I/O operation, suspend will 
 put the fiber to sleep and the IO call will wake it up, appropriately when you use futures and promises
