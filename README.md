@@ -28,6 +28,6 @@ Within a fiber
 
 For first timers, while compiling boost, make sure you link the library at the end 
 
-i.e g++ boostAsyncTest.cpp -lboost_fiber -lboost_context
+i.e g++ fiberTimeOuts.cpp -lboost_fiber -lboost_context
 
 

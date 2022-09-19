@@ -2,6 +2,7 @@
 #include<thread>
 #include <boost/fiber/all.hpp>
 
+
 //boost::fibers::fiber::join()
 void fun(int x){
 	
@@ -21,6 +22,8 @@ void fun(int x){
 int main(int argc, char const *argv[])
 {
   
+  std::chrono::seconds s{3};
+  std::cout<<std::chrono::seconds::max().count()<<std::endl; 	 
   boost::fibers::fiber fb1(fun,1);
   boost::fibers::fiber fb2(fun,2);
 
